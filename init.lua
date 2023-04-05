@@ -1,3 +1,4 @@
+-- Main Initialization file --
 require("vishnuarjun.plugins-setup")
 require("vishnuarjun.core.options")
 require("vishnuarjun.core.keymaps")
