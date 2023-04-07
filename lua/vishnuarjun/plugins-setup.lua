@@ -56,28 +56,7 @@ return packer.startup(function(use)
    -- movelines 
    use("fedepujol/move.nvim")
 
-   -- Pretty Fold
-   use{ 'anuvyklack/pretty-fold.nvim',
-   config = function()
-      require('pretty-fold').setup()
-   end
-   }
-
-   require('pretty-fold').ft_setup('cpp', {
-   process_comment_signs = false,
-   comment_signs = {
-      '/**', -- C++ Doxygen comments
-   },
-   stop_words = {
-      -- ╟─ "*" ──╭───────╮── "@brief" ──╭───────╮──╢
-      --          ╰─ WSP ─╯              ╰─ WSP ─╯
-      '%*%s*@brief%s*',
-   },
-   })
    if packer_bootstrap then
       require("packer").sync()
    end
 end)
-
-
-
