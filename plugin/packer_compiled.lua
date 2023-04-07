@@ -109,11 +109,6 @@ _G.packer_plugins = {
     path = "/Users/vishnuarjun/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
-  ["startup.nvim"] = {
-    loaded = true,
-    path = "/Users/vishnuarjun/.local/share/nvim/site/pack/packer/start/startup.nvim",
-    url = "https://github.com/startup-nvim/startup.nvim"
-  },
   ["telescope-fzf-native.nvim"] = {
     loaded = true,
     path = "/Users/vishnuarjun/.local/share/nvim/site/pack/packer/start/telescope-fzf-native.nvim",

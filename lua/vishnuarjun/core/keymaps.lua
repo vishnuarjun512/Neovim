@@ -12,13 +12,21 @@ keymap.set('n', '<S-k>', ':MoveLine(-1)<CR>')
 keymap.set('n', '<S-h>', ':MoveHChar(-1)<CR>')
 keymap.set('n', '<S-l>', ':MoveHChar(1)<CR>')
 
+--Insert Blank line
+keymap.set('n','<leader>o','o<Esc>')
+keymap.set('n','<leader>O','O<Esc>')
+
 -- Visual-mode commands
 keymap.set('v', '<S-j>', ':MoveBlock(1)<CR>')
 keymap.set('v', '<S-k>', ':MoveBlock(-1)<CR>')
 keymap.set('v', '<S-h>', ':MoveHBlock(-1)<CR>')
 keymap.set('v', '<S-l>', ':MoveHBlock(1)<CR>')
 
--- terminal exit
+--Better Indent
+keymap.set("v", "<", "<gv")
+keymap.set("v", ">", ">gv")
+
+-- Terminal exit
 keymap.set("n","<leader>vt",":vsp newtab<CR>:terminal<CR>")
 keymap.set("n","<leader>ht",":sp newtab<CR>:terminal<CR>")
 keymap.set("t", "<Esc>", "<C-\\><C-n>", {silent = true})
